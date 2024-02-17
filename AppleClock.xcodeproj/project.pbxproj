@@ -12,6 +12,9 @@
 		6D7084772B7F92A2006F0743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7084752B7F92A2006F0743 /* Main.storyboard */; };
 		6D7084792B7F92A3006F0743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7084782B7F92A3006F0743 /* Assets.xcassets */; };
 		6D70847C2B7F92A3006F0743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D70847A2B7F92A3006F0743 /* LaunchScreen.storyboard */; };
+		6D7084B32B80994A006F0743 /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7084B22B80994A006F0743 /* WorldClockViewController.swift */; };
+		6D7084B62B80999B006F0743 /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7084B52B80999B006F0743 /* WorldClockTableViewCell.swift */; };
+		6D7084B92B809B64006F0743 /* TimeZone+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7084B82B809B64006F0743 /* TimeZone+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		6D7084782B7F92A3006F0743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D70847B2B7F92A3006F0743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D70847D2B7F92A3006F0743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D7084B22B80994A006F0743 /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		6D7084B52B80999B006F0743 /* WorldClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewCell.swift; sourceTree = "<group>"; };
+		6D7084B82B809B64006F0743 /* TimeZone+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		6D70846E2B7F92A2006F0743 /* AppleClock */ = {
 			isa = PBXGroup;
 			children = (
+				6D7084B72B809B4E006F0743 /* Extension */,
+				6D7084B42B80997B006F0743 /* Cell */,
 				6D70846F2B7F92A2006F0743 /* AppDelegate.swift */,
 				6D7084712B7F92A2006F0743 /* SceneDelegate.swift */,
 				6D7084752B7F92A2006F0743 /* Main.storyboard */,
+				6D7084B22B80994A006F0743 /* WorldClockViewController.swift */,
 				6D7084782B7F92A3006F0743 /* Assets.xcassets */,
 				6D70847A2B7F92A3006F0743 /* LaunchScreen.storyboard */,
 				6D70847D2B7F92A3006F0743 /* Info.plist */,
 			);
 			path = AppleClock;
+			sourceTree = "<group>";
+		};
+		6D7084B42B80997B006F0743 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6D7084B52B80999B006F0743 /* WorldClockTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6D7084B72B809B4E006F0743 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6D7084B82B809B64006F0743 /* TimeZone+Util.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7084B92B809B64006F0743 /* TimeZone+Util.swift in Sources */,
+				6D7084B32B80994A006F0743 /* WorldClockViewController.swift in Sources */,
 				6D7084702B7F92A2006F0743 /* AppDelegate.swift in Sources */,
 				6D7084722B7F92A2006F0743 /* SceneDelegate.swift in Sources */,
+				6D7084B62B80999B006F0743 /* WorldClockTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
